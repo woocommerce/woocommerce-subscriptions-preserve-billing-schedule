@@ -10,6 +10,16 @@ With this plugin, the **next renewal payment date will always be calculated from
 
 > Note: this plugin was originally made available [via a Gist](https://gist.github.com/thenbrent/7a99fe32fd834c1a98fa46d74700367a). It's been moved into this repository because of the discussion and popularity of that gist.
 
+### Early Renewal Calculations
+
+Subscriptions offers the ability to allow your customers to [renew subscriptions before their next payment date](https://docs.woocommerce.com/document/subscriptions/version-2-3/#section-5).
+
+The default behaviour of an early renewal is **extend the next payment date from the existing next payment date**.
+
+For example, consider an annual subscription with the next payment date of June 1 2018. If a customer renews early on the May 1 2019, the next payment date will be rescheduled for June 1 2020, not May 1 2020.
+
+This is the same behaviour this mini-plugin implements, so there is no change to that early renewal behaviour when this plugin is active.
+
 ## Requirements
 
 This plugin requires WooCommerce 2.4 or newer and Subscriptions 2.0 or newer.
